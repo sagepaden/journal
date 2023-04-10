@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Journal</title>
 </head>
 <body>
-  
+  <h1>Journal</h1>
+  <form id="journal-entry-form">
+    <label for="journal-title">Enter a title for your journal entry:</label><br>
+    <input id="journal-title" type="text" required><br>
+    <label for="journal-body">Enter the journal body:</label><br>
+    <input id="journal-body" type="text" required><br>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="journal-output" class="hidden">
+    <h2>Entries</h2>
+    <h3 id="journal-title-output"></h3>
+    <p id="journal-body-output"><p>
+<!-- create document elements to put here in the UI logic -->
+  </div><br>
+  <h2>Word count</h2>
+  <div id="entry-results" class="hidden">
+<!-- output method results here where we count vowels and words -->
+  </div>
+  <h2>Vowel count</h2>
+  <div id="vowel-results" class="hidden"></div>
 </body>
 </html>
